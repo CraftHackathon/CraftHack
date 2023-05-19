@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "vigil_ai_addon",
+    "version": "1.0",
+    "content_scripts":[
+        {
+            "js":["gmail.js"],
+            "matches":[
+                "https://mail.google.com/mail/*"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
